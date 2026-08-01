@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services & Process | Abdus Salam</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; transform: none !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(conv[c]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(a[1]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><span class="logo-accent">A</span> Abdus.dev</a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="work.html" class="nav-link">Work & Engagements</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="services.html" class="nav-link active">Services & Process</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="hire.html" class="nav-btn">Hire me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="services-hero">
+            <div class="section-container">
+                <h1 class="page-title">Hire me for the whole build, or just the hard part.</h1>
+                <p class="page-subtitle">I provide expert MERN stack development, from architectural design to deployment. My process is transparent, efficient, and built around your business goals.</p>
+            </div>
+        </section>
+
+        <section class="services-grid-section">
+            <div class="section-container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Full-Stack Web Apps</h3>
+                        <p>Complete end-to-end development. I handle the database schema design, robust REST/GraphQL API development, and responsive, state-managed frontend interfaces.</p>
+                        <ul class="service-list">
+                            <li>MongoDB / PostgreSQL Data Modeling</li>
+                            <li>Node.js / Express Architecture</li>
+                            <li>React / Next.js SPA & SSR</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Front-End Development</h3>
+                        <p>Pixel-perfect implementation of your designs. I specialize in high-performance UIs that feel snappy, accessible, and maintainable.</p>
+                        <ul class="service-list">
+                            <li>Component Library Development</li>
+                            <li>Animation & Motion Graphics</li>
+                            <li>Responsive Adaptive Layouts</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Maintenance & Scaling</h3>
+                        <p>Already have a stack? I perform audits, optimize database queries, improve page load speeds, and add features to legacy codebases.</p>
+                        <ul class="service-list">
+                            <li>Codebase Refactoring</li>
+                            <li>API Optimization</li>
+                            <li>Server Migration & Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="section-container">
+                <h2 class="section-heading">The Delivery Lifecycle</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <span class="step-num">01</span>
+                        <h3>Discovery</h3>
+                        <p>Deep dive into your project requirements, goals, and technical constraints to define the ideal architecture.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">02</span>
+                        <h3>Development</h3>
+                        <p>Iterative, agile cycles. You get access to a live staging environment so we can iterate in real-time.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">03</span>
+                        <h3>Handoff</h3>
+                        <p>Clean, documented source code handover. Full deployment to your preferred cloud environment with post-launch support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <p>© 2026 Abdus Salam. Built in Lahore, PK.</p>
+                    <a href="mailto:info@abdusdev.com">info@abdusdev.com</a>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/abdus-salam-a42a57341/">LinkedIn</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

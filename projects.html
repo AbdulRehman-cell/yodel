@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Abdus Salam — Full-Stack Developer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; transform: none !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(conv[c]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(a[1]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><span class="logo-accent">A</span> Abdus.dev</a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="work.html" class="nav-link">Work & Engagements</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="services.html" class="nav-link">Services & Process</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="hire.html" class="nav-btn">Hire me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="section-padding">
+            <div class="section-container">
+                <h1 class="page-title">Things I've designed, built and shipped.</h1>
+                <p class="section-lead">Every one of these is live. Click through and click around — nothing here is a mockup.</p>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <img src="https://picsum.photos/seed/project1/800/500" alt="Smart Courier Platform" loading="lazy">
+                        <div class="project-info">
+                            <h3>Smart Courier & Cargo Management</h3>
+                            <p>A full-stack logistics solution built with MERN. Optimized for real-time tracking, inventory management, and automated shipping workflows.</p>
+                            <div class="tech-tags"><span>React</span><span>Node.js</span><span>Socket.io</span></div>
+                            <a href="#" class="view-project">View live project →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <img src="https://picsum.photos/seed/project2/800/500" alt="Website for Tecrupt" loading="lazy">
+                        <div class="project-info">
+                            <h3>Website for Tecrupt</h3>
+                            <p>Strategic web platform for a growing tech agency. Focused on speed, responsive design, and high-conversion landing pages.</p>
+                            <div class="tech-tags"><span>Next.js</span><span>Tailwind</span><span>Framer Motion</span></div>
+                            <a href="#" class="view-project">View live project →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <img src="https://picsum.photos/seed/project3/800/500" alt="Nova Online Academy" loading="lazy">
+                        <div class="project-info">
+                            <h3>Nova Online Academy</h3>
+                            <p>LMS architecture enabling thousands of concurrent learners. Secure payment gateways and interactive dashboard capabilities.</p>
+                            <div class="tech-tags"><span>MERN</span><span>Stripe</span><span>Redis</span></div>
+                            <a href="#" class="view-project">View live project →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <img src="https://picsum.photos/seed/project4/800/500" alt="Pipsflow" loading="lazy">
+                        <div class="project-info">
+                            <h3>Pipsflow</h3>
+                            <p>Fintech application for tracking market movements. Real-time data visualization with complex financial data processing.</p>
+                            <div class="tech-tags"><span>React</span><span>D3.js</span><span>WebSockets</span></div>
+                            <a href="#" class="view-project">View live project →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <img src="https://picsum.photos/seed/project5/800/500" alt="Full Stack Blog App" loading="lazy">
+                        <div class="project-info">
+                            <h3>Full Stack Blog App</h3>
+                            <p>A performant content management system with authentication, rich text editing, and comment sentiment analysis features.</p>
+                            <div class="tech-tags"><span>Node</span><span>MongoDB</span><span>QuillJS</span></div>
+                            <a href="#" class="view-project">View live project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Abdus Salam</h3>
+                    <p>Building high-performance MERN applications from Lahore, PK.</p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>info@abdusdev.com<br>+92 312 4597594</p>
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <a href="https://www.linkedin.com/in/abdus-salam-a42a57341/">LinkedIn</a>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Abdus Salam. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>

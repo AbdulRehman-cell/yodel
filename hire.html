@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hire Me — Abdus Salam | Full-Stack MERN Development</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; transform: none !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(conv[c]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(a[1]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><span class="logo-accent">A</span> Abdus.dev</a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="work.html" class="nav-link">Work</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="hire.html" class="nav-btn active">Hire me</a>
+              <a href="reviews.html">Reviews</a>
+</nav>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <section class="hire-hero">
+            <div class="section-container">
+                <h1 class="page-title">Let's build something significant.</h1>
+                <p class="page-lead">Full-stack development that focuses on business outcomes. Whether you have a clear spec or a rough napkin idea, let's start a conversation.</p>
+            </div>
+        </section>
+
+        <section class="contact-grid">
+            <div class="section-container">
+                <div class="grid-layout">
+                    <div class="contact-info">
+                        <h2 class="section-heading">Get in touch</h2>
+                        <p>I am currently accepting new freelance contracts. If you need a reliable MERN partner who handles the entire stack, I'm available.</p>
+                        
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <strong>Email</strong>
+                                <a href="mailto:info@abdusdev.com">info@abdusdev.com</a>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Phone</strong>
+                                <a href="tel:+923124597594">+92 312 4597594</a>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Location</strong>
+                                <span>Lahore, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="#" onsubmit="return false;">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Details</label>
+                            <textarea rows="5" placeholder="Tell me about your project, timeline, and goals."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <p>&copy; 2026 Abdus Salam. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abdus-salam-a42a57341/">LinkedIn</a>
+                    <a href="mailto:info@abdusdev.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

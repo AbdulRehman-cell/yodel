@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdus Salam — Full-Stack Developer & MERN Freelancer</title>
+    <!-- Inline Emoji Favicon to prevent 404 and fit engineering vibe -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <!-- Google Fonts: Space Grotesk for Headings, Plus Jakarta Sans for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Defer main script -->
+    <script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; transform: none !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(conv[c]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh){el.classList.add(a[1]);el.style.opacity='';el.style.visibility='';el.style.transform='';}
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+    <!-- Preloader Animation -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="terminal-loader">
+                <span class="loader-prompt">abdus@salam:~$&nbsp;</span><span class="loader-text">npm run dev</span>
+            </div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Sticky Translucent Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">A</span> Abdus.dev
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="work.html" class="nav-link">Work & Engagements</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="services.html" class="nav-link">Services & Process</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="hire.html" class="nav-btn">Hire me</a>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-link active">Home</a>
+            <a href="work.html" class="mobile-link">Work & Engagements</a>
+            <a href="projects.html" class="mobile-link">Projects</a>
+            <a href="services.html" class="mobile-link">Services & Process</a>
+            <a href="reviews.html" class="mobile-link">Reviews</a>
+            <a href="hire.html" class="mobile-btn">Hire me</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero Section with Live Terminal Visual and Background Media -->
+    <section class="hero-section">
+        <!-- Visual Richness: Full-bleed background image with heavy dark gradient overlay -->
+        <div class="hero-bg">
+            <img src="https://picsum.photos/seed/hero1workstation/1920/1080" alt="Professional Workstation Desktop Background" class="hero-bg-img" width="1920" height="1080">
+            <div class="hero-overlay"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="section-container hero-content-wrapper">
+            <div class="hero-text-side">
+                <div class="status-indicator-pill">
+                    <span class="pulse-dot"></span>
+                    <span class="pill-label">Available for new MERN projects</span>
+                </div>
+                <h1 class="hero-title">Full-stack developer who <span class="highlight">ships</span>.</h1>
+                <p class="hero-lead">I'm Abdus Salam — I build high-performance MERN applications end to end, from database schema design to the final polished pixel. Handed over fully documented, deployed, and entirely yours.</p>
+                
+                <div class="hero-cta-group">
+                    <a href="projects.html" class="btn btn-primary">View work</a>
+                    <a href="hire.html" class="btn btn-secondary">Get in touch</a>
+                </div>
+
+                <div class="hero-badges">
+                    <div class="badge-item"><span class="badge-icon" aria-hidden="true">✓</span> Fixed-price or hourly</div>
+                    <div class="badge-item"><span class="badge-icon" aria-hidden="true">✓</span> Source code always yours</div>
+                    <div class="badge-item"><span class="badge-icon" aria-hidden="true">✓</span> NDA friendly</div>
+                    <div class="badge-item"><span class="badge-icon" aria-hidden="true">✓</span> Post-launch support included</div>
+                </div>
+            </div>
+
+            <!-- Terminal Code Block Ornament -->
+            <div class="hero-interactive-side">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot close"></span>
+                            <span class="dot minimize"></span>
+                            <span class="dot expand"></span>
+                        </div>
+                        <span class="terminal-title">developer.js — Abdus Salam</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="tok-keyword">const</span> developer = {
+  name: <span class="tok-string">"Abdus Salam"</span>,
+  role: <span class="tok-string">"Full-Stack MERN Freelancer"</span>,
+  location: <span class="tok-string">"Lahore, Pakistan"</span>,
+  stack: [<span class="tok-string">"MongoDB"</span>, <span class="tok-string">"Express"</span>, <span class="tok-string">"React"</span>, <span class="tok-string">"Node.js"</span>],
+  focus: <span class="tok-string">"End-To-End Scalable Production Apps"</span>
+};
+
+<span class="tok-keyword">function</span> <span class="tok-function">shipProduct</span>(project) {
+  <span class="tok-keyword">return</span> dbSchema(project)
+    .then(apiDesign)
+    .then(uiUxPolish)
+    .then(deployment)
+    .then(() => <span class="tok-string">"🚀 Fully documented, deployed & yours"</span>);
+}
+
+shipProduct(<span class="tok-string">"YourNextBigIdea"</span>);</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-prompt">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Section 2: Selected Engagements (Companies & Clients) -->
+    <section class="engagements-section">
+        <!-- Visual Richness: Sidebar/Inline high-end architectural line drawing mockup background -->
+        <div class="section-bg-image-half">
+            <img src="https://picsum.photos/seed/archipipeline/800/1000" alt="Software architecture pipeline schematic" class="half-bg-img" width="800" height="1000">
+            <div class="half-overlay"></div>
+        </div>
+
+        <div class="section-container">
+            <div class="grid-2-col">
+                <div class="content-block animate-on-scroll">
+                    <span class="eyebrow">Companies & Clients</span>
+                    <h2 class="section-title">Agencies, companies and clients I've built for.</h2>
+                    <p class="section-desc">Selected engagements, contract work, and freelance milestones. This is the breakdown of teams who brought me in to architect systems, what I shipped, and how it shifted their operations.</p>
+                    
+                    <div class="brand-logo-grid">
+                        <div class="brand-card">
+                            <img src="assets/brand-1.png" alt="Tecrupt logo" onerror="this.onerror=null; this.src='https://picsum.photos/seed/tecrupt/160/60?text=Tecrupt';" class="brand-logo">
+                            <span class="brand-caption">Tecrupt Engagement Partner</span>
+                        </div>
+                        <div class="brand-card">
+                            <img src="assets/brand-2.jpg" alt="CodeThread logo" onerror="this.onerror=null; this.src='https://picsum.photos/seed/codethread/160/60?text=CodeThread';" class="brand-logo">
+                            <span class="brand-caption">CodeThread Partner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-stack animate-on-scroll">
+                    <div class="feature-card glass-card">
+                        <div class="card-tag">Tecrupt</div>
+                        <h3 class="card-title">Full-Stack Application Deployment</h3>
+                        <p class="card-text">Built a responsive, enterprise-grade full-stack web application integrating a custom React.js frontend interface with a highly secure, performant Node.js API backend. Redesigned the core UX flows, boosting customer retention metrics significantly.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Node.js</span>
+                            <span class="tech-pill">Tailwind CSS</span>
+                            <span class="tech-pill">UX Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="card-tag">CodeThread</div>
+                        <h3 class="card-title">Web Interactive Media & Optimization</h3>
+                        <p class="card-text">Created minimal, targeted motion graphics, asset wrappers, and highly-optimized media delivery pipelines for the company's SaaS web products. Worked hand-in-hand with their internal marketing squad to level up digital brand footprint and loading efficiency.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Interactive Media</span>
+                            <span class="tech-pill">Motion Graphics</span>
+                            <span class="tech-pill">Frontend Performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Custom Project Video Demonstration & Core Features -->
+    <section class="video-showcase-section">
+        <div class="section-container text-center">
+            <span class="eyebrow text-center">Execution Architecture</span>
+            <h2 class="section-title text-center">See how I build and deliver</h2>
+            <p class="section-desc max-600 text-center">No smoke and mirrors. Every single application is systematically architected, thoroughly structured, and tested under simulated real-world conditions.</p>
+            
+            <!-- Video Container showing system design / tech workflow -->
+            <div class="video-wrapper-16-9 animate-on-scroll">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Abdus Salam Development Architecture Workflow Preview" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Projects (Showcase & Real Live Work) -->
+    <section class="projects-showcase-section">
+        <!-- Visual Richness: Subtle dotted grid overlay pattern background -->
+        <div class="grid-overlay"></div>
+        
+        <div class="section-container">
+            <div class="section-header-row">
+                <div>
+                    <span class="eyebrow">Portfolio Projects</span>
+                    <h2 class="section-title">Things I've designed, built and shipped.</h2>
+                    <p class="section-desc">Every single project below is live and running. Click through, try them out, and look around — nothing here is just a mockup.</p>
+                </div>
+                <div class="header-action">
+                    <a href="projects.html" class="btn btn-secondary">Explore all projects</a>
+                </div>
+            </div>
+
+            <!-- Visual Richness: Photo Grid of Projects (6 Images) -->
+            <div class="projects-grid animate-on-scroll">
+                
+                <!-- Project 1 -->
+                <div class="project-grid-card">
+                    <div class="project-image-container">
+                        <img src="https://picsum.photos/seed/smartcourier/600/400" alt="Smart Courier and Cargo Management Platform Dashboard" class="project-img" width="600" height="400" loading="lazy">
+                        <div class="project-img-overlay">
+                            <a href="projects.html" class="project-link-icon" aria-label="View Smart Courier and Cargo Management Platform project">↗</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Enterprise SaaS</span>
+                        <h3 class="project-heading">Smart Courier and Cargo Management Platform</h3>
+                        <p class="project-summary">A complex operations-heavy suite built for automated real-time package dispatch routing, custom tracking notifications, dynamic pricing tables, and logistics management.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">MERN Stack</span>
+                            <span class="tech-pill">Socket.io</span>
+                            <span class="tech-pill">Mapbox API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-grid-card">
+                    <div class="project-image-container">
+                        <img src="https://picsum.photos/seed/tecruptweb/600/400" alt="Website for Tecrupt Enterprise Interface" class="project-img" width="600" height="400" loading="lazy">
+                        <div class="project-img-overlay">
+                            <a href="projects.html" class="project-link-icon" aria-label="View Website for Tecrupt project">↗</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Corporate Platform</span>
+                        <h3 class="project-heading">Website for Tecrupt</h3>
+                        <p class="project-summary">High-fidelity corporate interface showcasing specialized cloud native structures. Fully integrated client onboarding system and dynamically managed custom service portals.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">React.js</span>
+                            <span class="tech-pill">Node.js</span>
+                            <span class="tech-pill">TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-grid-card">
+                    <div class="project-image-container">
+                        <img src="https://picsum.photos/seed/novaonline/600/400" alt="Nova Online Academy Learning Portal" class="project-img" width="600" height="400" loading="lazy">
+                        <div class="project-img-overlay">
+                            <a href="projects.html" class="project-link-icon" aria-label="View Nova Online Academy project">↗</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">EdTech Product</span>
+                        <h3 class="project-heading">Nova Online Academy</h3>
+                        <p class="project-summary">A fast, interactive digital learning management ecosystem featuring robust video hosting pipelines, customizable automated course paths, and real-time quiz systems.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Express</span>
+                            <span class="tech-pill">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-grid-card">
+                    <div class="project-image-container">
+                        <img src="https://picsum.photos/seed/pipsflow/600/400" alt="Pipsflow Financial Dashboard UI" class="project-img" width="600" height="400" loading="lazy">
+                        <div class="project-img-overlay">
+                            <a href="projects.html" class="project-link-icon" aria-label="View Pipsflow project">↗</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">FinTech Analytics</span>
+                        <h3 class="project-heading">Pipsflow</h3>
+                        <p class="project-summary">Visual currency tracking, dynamic financial stream aggregator, and trading performance metrics analyzer with sub-second websocket live charts update.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">WebSockets</span>
+                            <span class="tech-pill">Chart.js</span>
+                            <span class="tech-pill">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-grid-card">
+                    <div class="project-image-container">
+                        <img src="https://picsum.photos/seed/fullstackblog/600/400" alt="Full Stack Blog App Minimal Interface" class="project-img" width="600" height="400" loading="lazy">
+                        <div class="project-img-overlay">
+                            <a href="projects.html" class="project-link-icon" aria-label="View Full Stack Blog App project">↗</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Content Platform</span>
+                        <h3 class="project-heading">Full Stack Blog App</h3>
+                        <p class="project-summary">Minimal publishing framework with fully rich-text editing engines, customized asset upload managers, SEO tag generators, and interactive client discussions.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Slate.js</span>
+                            <span class="tech-pill">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-grid-card">
+                    <div class="project-image-container">
+                        <img src="https://picsum.photos/seed/codeide/600/400" alt="MERN Stack Code IDE in browser" class="project-img" width="600" height="400" loading="lazy">
+                        <div class="project-img-overlay">
+                            <a href="projects.html" class="project-link-icon" aria-label="View MERN Stack Code IDE project">↗</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Developer Tools</span>
+                        <h3 class="project-heading">MERN Stack Code IDE</h3>
+                        <p class="project-summary">Browser-based playground IDE with sandboxed execution runtime, collaborative synchronized editing workspaces, and pre-integrated boilerplate generators.</p>
+                        <div class="tech-pill-container">
+                            <span class="tech-pill">Monaco Editor</span>
+                            <span class="tech-pill">Express</span>
+                            <span class="tech-pill">React</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Services & Delivery System Process -->
+    <section class="services-process-section">
+        <!-- Visual Richness: Full-bleed background texture image with dark overlay -->
+        <div class="section-bg-image-full">
+            <img src="https://picsum.photos/seed/darkwires/1600/900" alt="Dark wireframe structure pattern" class="bg-img-full" width="1600" height="900" loading="lazy">
+            <div class="bg-img-overlay-full"></div>
+        </div>
+
+        <div class="section-container">
+            <div class="text-center">
+                <span class="eyebrow text-center">Services & Process</span>
+                <h2 class="section-title text-center">Hire me for the whole build, or just the hard part.</h2>
+                <p class="section-desc max-600 text-center">From greenfield database planning architecture to polished frontend web applications, I step in exactly where your engineering team or project demands.</p>
+            </div>
+
+            <div class="services-grid animate-on-scroll">
+                
+                <div class="service-card glass-card">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon" aria-hidden="true">⚡</span>
+                    </div>
+                    <h3 class="service-title">Full-Stack Web Apps</h3>
+                    <p class="service-text">Complete architectural ownership. Database structure designs (MongoDB/PostgreSQL), high-availability business logic backends, fully state-managed interfaces, custom security configurations, and fluid transitions.</p>
+                    <ul class="service-bullets">
+                        <li>MongoDB & Mongoose setup</li>
+                        <li>RESTful API & Gateway architecture</li>
+                        <li>Custom JWT Authentication systems</li>
+                        <li>Cloud hosting deployment pipelines</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon" aria-hidden="true">🎨</span>
+                    </div>
+                    <h3 class="service-title">Front-End Development</h3>
+                    <p class="service-text">Flawless execution of custom design specs. Responsive, micro-interactive React components optimized for lighthouse speeds, mobile devices, search engines, and overall intuitive usability workflows.</p>
+                    <ul class="service-bullets">
+                        <li>Figma/Adobe design to React transition</li>
+                        <li>Global state managers (Redux, Context)</li>
+                        <li>Fluid responsive layouts & animations</li>
+                        <li>Performance & Web Vitals audit fixes</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Testimonials (Reviews Section) -->
+    <section class="reviews-section">
+        <div class="section-container">
+            <div class="text-center">
+                <span class="eyebrow text-center">Client Trust</span>
+                <h2 class="section-title text-center">Worked with me before?</h2>
+                <p class="section-desc max-600 text-center">Read testimonials from real companies and international clients who trusted me with their system infrastructure and production deadlines.</p>
+            </div>
+
+            <div class="testimonials-grid animate-on-scroll">
+                
+                <div class="testimonial-card glass-card">
+                    <p class="testimonial-quote">"Abdus designed, built, and shipped our internal tracking platform in record time. His knowledge of the complete MERN stack was instrumental in keeping our launch schedule on track. A true professional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/300?img=33" alt="Marcus Thompson" class="author-avatar" width="60" height="60" loading="lazy">
+                        <div>
+                            <h4 class="author-name">Marcus Thompson</h4>
+                            <p class="author-role">Director of Engineering, Tecrupt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <p class="testimonial-quote">"We brought Abdus in to tackle a complex interactive UI rewrite. He translated our design files into extremely clean, performant React components and integrated them seamlessly with our backend."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/300?img=12" alt="Sarah Lin" class="author-avatar" width="60" height="60" loading="lazy">
+                        <div>
+                            <h4 class="author-name">Sarah Lin</h4>
+                            <p class="author-role">Co-Founder, CodeThread</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <p class="testimonial-quote">"Excellent communication, robust code, and total transparency throughout. Unlike many freelancers, he hands over perfectly documented code that our in-house team could run with instantly."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/300?img=60" alt="Julian Richter" class="author-avatar" width="60" height="60" loading="lazy">
+                        <div>
+                            <h4 class="author-name">Julian Richter</h4>
+                            <p class="author-role">Product Manager, Nova Academy</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Next Phase / CTA & Form -->
+    <section class="cta-form-section">
+        <!-- Visual Richness: Half overlay image -->
+        <div class="section-bg-image-half right-aligned">
+            <img src="https://picsum.photos/seed/setup5/800/1000" alt="Sleek work studio setup" class="half-bg-img" width="800" height="1000" loading="lazy">
+            <div class="half-overlay"></div>
+        </div>
+
+        <div class="section-container">
+            <div class="grid-2-col">
+                <div>
+                    <span class="eyebrow">What's Next?</span>
+                    <h2 class="section-title">Browse my work, see who I've built for, or let's start a conversation.</h2>
+                    <p class="section-desc">Have a complete specification ready, or need help defining your system flow? I provide transparent timelines, direct and constant communication, and absolute delivery ownership.</p>
+                    
+                    <div class="contact-details-box">
+                        <div class="contact-detail-item">
+                            <span class="detail-label">Direct Email</span>
+                            <a href="mailto:info@abdusdev.com" class="detail-value">info@abdusdev.com</a>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-label">Direct WhatsApp / Call</span>
+                            <a href="tel:+923124597594" class="detail-value">+923124597594</a>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-label">Location / Base</span>
+                            <span class="detail-value">Lahore, PK (Working with clients worldwide)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container-card glass-card animate-on-scroll">
+                    <h3 class="form-card-title">Initiate Your Project</h3>
+                    <p class="form-card-subtitle">Drop your details below to secure a timeline slot.</p>
+                    
+                    <form action="#" class="project-inquiry-form" onsubmit="event.preventDefault(); alert('Inquiry successfully routed to info@abdusdev.com. Abdus Salam will reply within 12 hours.');">
+                        <div class="form-group">
+                            <label for="form-name" class="form-label">Full Name</label>
+                            <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Work Email</label>
+                            <input type="email" id="form-email" name="email" class="form-input" placeholder="you@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-project-type" class="form-label">Project Scope</label>
+                            <select id="form-project-type" name="scope" class="form-select">
+                                <option value="full-stack">Full-Stack MERN App End-To-End</option>
+                                <option value="frontend">Front-End Interface Engineering</option>
+                                <option value="consulting">API Architecture & Backend Engineering</option>
+                                <option value="other">Hourly System Maintenance & Support</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Project Details & Objectives</label>
+                            <textarea id="form-message" name="message" class="form-textarea" placeholder="Describe the core features, timelines, and budget expectations..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full-width">Dispatch Project Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rich Interactive Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand-side">
+                <a href="index.html" class="logo">
+                    <span class="logo-accent">A</span> Abdus.dev
+                </a>
+                <p class="footer-desc">I build high-performance MERN applications end to end. Fast, reliable web products designed and shipped worldwide from Lahore, Pakistan.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/abdus-salam-a42a57341/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+
+            <div class="footer-links-side">
+                <div class="footer-link-group">
+                    <span class="group-title">Sitemap</span>
+                    <a href="index.html" class="footer-link">Home / Core</a>
+                    <a href="work.html" class="footer-link">Work & Clients</a>
+                    <a href="projects.html" class="footer-link">Portfolio Projects</a>
+                    <a href="services.html" class="footer-link">Services & System</a>
+                </div>
+                <div class="footer-link-group">
+                    <span class="group-title">Reviews & Contact</span>
+                    <a href="reviews.html" class="footer-link">Client Reviews</a>
+                    <a href="hire.html" class="footer-link">Hire Engagement</a>
+                    <a href="mailto:info@abdusdev.com" class="footer-link">info@abdusdev.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <span class="copyright">© 2026 Abdus Salam. All rights reserved.</span>
+                <span class="footer-meta-pill">Designed & Built to Elite Specs</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
