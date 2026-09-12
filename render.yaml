@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: static-portfolio
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    startCommand: null # Handled by Dockerfile CMD
+    routes:
+      - type: redirect
+        source: /*
+        destination: /index.html
